@@ -21,7 +21,19 @@ body, html {
     overflow: hidden;
 }
 
+.links {
+  color: #777;
+  float: right;
+}
 
+.links a {
+  color: #777;
+}
+
+.links a:hover {
+  color: #777;
+  text-decoration: none;
+}
 
 /* MAIN CONTENT  */
 
