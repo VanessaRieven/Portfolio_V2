@@ -23,7 +23,7 @@ body, html {
 
 .links {
   color: #777;
-  float: right;
+  /* float: right; */
 }
 
 .links a {
@@ -206,6 +206,64 @@ section span {
   left: 0;
   z-index: -1;
 }
+
+
+
+/* 3D SLIDER JSSOR  */
+
+.jssorl-009-spin {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  text-align:center;
+  background-color:rgba(0,0,0,0.7);
+}
+
+  /*jssor slider loading skin spin css*/
+  .jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-top:-19px;
+    position:relative;
+    top:50%;
+    width:38px;
+    height:38px;
+  }
+
+  .slides {
+    cursor:default;
+    position:relative;
+    top:0px;
+    left:0px;
+    width:700px;
+    height:400px;
+    overflow:hidden;
+  }
+
+  @keyframes jssorl-009-spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+  }
+
+  /*jssor slider bullet skin 052 css*/
+  .jssorb052 .i {position:absolute;cursor:pointer;}
+  .jssorb052 .i .b {fill:#000;fill-opacity:0.3;}
+  .jssorb052 .i:hover .b {fill-opacity:.7;}
+  .jssorb052 .iav .b {fill-opacity: 1;}
+  .jssorb052 .i.idn {opacity:.3;}
+
+  /*jssor slider arrow skin 052 css*/
+  .jssora052 {display:block;position:absolute;cursor:pointer;}
+  .jssora052 .a {fill:none;stroke:#000;stroke-width:360;stroke-miterlimit:10;}
+  .jssora052:hover {opacity:.8;}
+  .jssora052.jssora052dn {opacity:.5;}
+  .jssora052.jssora052ds {opacity:.3;pointer-events:none;}
+
+
 
 
 
