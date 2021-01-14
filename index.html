@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanessa Rieven</title>
     <link rel="icon" href="img/icons/pena.png" type="image/icon type">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/bgeffects.css">
@@ -136,25 +137,54 @@
     <section>
         <div>
             <h3>WebDesign</h3>
-            <span>Comming Soon</span>
-            <br><br>
-            <em class="links"><a href="https://www.behance.net/vanessarieven">Check my Behance &#8594;</a></em>
-
-        </div>
+            <div style="display: flex; justify-content: space-evenly;">
+                <figure class="snip1206">
+                    <img src="img/1.png" alt="sample74"/>
+                    <figcaption>
+                        <h2>Personal Portfolio</h2>
+                        <p>Version 1 of my online Portfolio</p>
+                    </figcaption>
+                    <a href="https://www.behance.net/gallery/109584451/Stradivarius-Website-Redesign"></a>
+                </figure>
+                <figure class="snip1206 hover">
+                    <img src="img/3.jpg" alt="sample69"/>
+                    <figcaption>
+                        <h2>Stradivarius Redesign</h2>
+                        <p>A small project of a redesigned version of clothing brand Stradivarius website.</p>
+                    </figcaption>
+                    <a href="https://www.behance.net/gallery/109584451/Stradivarius-Website-Redesign"></a>
+                </figure>
+            </div>
         </div>
     </section>
     <section>
         <div>
             <h3>Projects</h3>
-            <span>Art has been a part of my identity since I was a kid, as an introvert, most of my school holidays and free time was spent home drawing and doing fan art of all the bands and games I loved. Although it's just a hobbie, I do work on commissions from time to time.</span>
-           
-        </div>
+            <div style="display: flex">
+                <figure class="snip1206">
+                    <img src="img/2.jpg" alt="sample74"/>
+                    <figcaption>
+                      <h2>Project Alias</h2>
+                      <p>A mobile game concept.</p>
+                    </figcaption>
+                    <a href="https://www.behance.net/gallery/40940593/Project-Alias-Pixel-Art-Game"></a>
+                </figure>
+            </div>
         </div>
     </section>
     <section>
-        <div>
-            <h3>Contact</h3>
-            
+        <div style="padding:40px; max-width: 400px">
+            <h3 class="center">Let's Talk</h3>
+            <form action=”mailto:vanessa.sofiacb@gmail.com”  method=”POST”  enctype=”multipart/form-data” name=”EmailForm”>
+                <input name=”Name” class="contact" type="text" placeholder="Name">
+                <input name="Email" class="contact" type="email" placeholder="Email"> 
+                <textarea name="Message" class="contact message"></textarea>
+                <button type="submit" id="sendmessage">Send Message</button>
+            </form>
+            <div style="display: flex; justify-content: center;">
+                <a href="https://www.instagram.com/vanessarievenart/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UC-nB7H4wBxB2BtGF5eOvgow"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </section>
 

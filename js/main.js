@@ -8,9 +8,9 @@ $(document).ready(function() {
         $(this).fadeOut(1000);
     })
 
-
-
-    $('.loader').fadeOut(500);
+    setTimeout(function(){ 
+        $('.loader').fadeOut(1500);
+    }, 2000);
 
 
     // 3D Slider
@@ -56,6 +56,13 @@ $(document).ready(function() {
       $(window).bind("load", ScaleSlider);
       $(window).bind("resize", ScaleSlider);
       $(window).bind("orientationchange", ScaleSlider);
+
+    /* Demo purposes only */
+    $(".hover").mouseleave(
+        function () {
+            $(this).removeClass("hover");
+        }
+    );
               
 });
 
