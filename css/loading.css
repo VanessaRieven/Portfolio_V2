@@ -51,8 +51,8 @@ h2 {
     top: 0;
     left: 0;
     display: block;
-    background: radial-gradient(circle at center, #222, #000);
-    z-index:9999;
+    background: #111;
+    z-index:99999;
 }
 
 .container_cubes {

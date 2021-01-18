@@ -1,20 +1,18 @@
-/* FONTS  */
+/* FONTS  ________________________________________*/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+/* VARIABLES ________________________________________*/
 
 
 
-/* VARIABLES */
-
-
-
-/* MAIN CSS */
+/* MAIN CSS ________________________________________*/
 
 body, html {
     font-family: 'Montserrat', sans-serif;
-    background: radial-gradient(circle at center, #222, #000);
+    background:#111;
+    /* background: radial-gradient(circle at center, #222, #000); */
     width: 100%;
     height: 100%;
     color: #efefef;
@@ -23,7 +21,6 @@ body, html {
 
 .links {
   color: #777;
-  /* float: right; */
 }
 
 .links a {
@@ -35,17 +32,37 @@ body, html {
   text-decoration: none;
 }
 
-/* MAIN CONTENT  */
-
 h3 {
-    color: #777;
-    text-align: left;
-    border-bottom: 1px solid #777;
-    width: 100%;
+  color: #777;
+  text-align: left;
+  border-bottom: 1px solid #777;
+  width: 100%;
+}
+
+.nav_mobile {
+  display: none;
 }
 
 
+/* SCROLLBAR ________________________________________*/
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0px 0px #efefef; 
+}
+
+/* MAIN CONTENT  ________________________________________*/
+
+/* SECTIONS  ________________________________________*/
 input[type=radio] {
   display: none;
 }
@@ -140,6 +157,7 @@ input[type=radio]#section6:checked ~ .cover {
   background-color: #345d7e;
 }
 
+
 .nav {
   position: fixed;
   z-index: 2;
@@ -209,83 +227,156 @@ section span {
 }
 
 
-/* 3D */
+
+
+
+
+
+/* WHO AM I  ________________________________________*/
+
+.about-me {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Montserrat';
+}
+
+.about-me h3 {
+  letter-spacing: 5px;
+}
+
+.about-me p {
+  font-size: 12px;
+  text-align: justify;
+}
+
+.about-me img {
+  border-radius: 50%;
+  -moz-box-shadow: 0 0 15px #888;
+  -webkit-box-shadow: 0 0 15px #888;
+  box-shadow: 0 0 15px #888;
+  display: block;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.6s ease;
+}
+
+.about-me img:hover {
+  filter: none;
+}
+
+.blocktext {
+  font-size: 11px;
+}
+
+.icons {
+  display: flex;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.icons .icon1 {
+  width: 20%;
+  text-align: center;
+}
+
+.Coluna-1-About {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  margin-right: 30px;
+}
+
+.fa, .fas {
+  font-weight: 900;
+  font-size: 40px;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition:         transform .8s ease-in-out;
+}
+
+.fa:hover, .fas:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 10px;
+  border: 0;
+  border-top: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+/* Drawings ________________________________________*/
+
+#bunga.less {
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  overflow-y: scroll;
+}
+
+.row .column {
+  flex: 25%;
+  padding-left: 15px;
+}
+
+.row img {
+  width: 100%;
+  margin-top: 15px;
+  vertical-align: middle;
+  -moz-box-shadow: 0 0 5px #777;
+  -webkit-box-shadow: 0 0 5px #777;
+  box-shadow: 3 6 18px #000000;
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.row img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border: solid 5px #efefef;
+  opacity: 0.5; 
+}
+
+
+
+
+
+
+
+
+/* 3D ________________________________________*/
 .side_divs {
   display: flex;
 }
 
-
-
-/* 3D SLIDER JSSOR  */
-
-
- /*jssor slider loading skin spin css*/
- .jssorl-009-spin img {
-  animation-name: jssorl-009-spin;
-  animation-duration: 1.6s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+.row .column2 {
+  flex: 25%;
+  padding-left: 15px;
 }
 
-@keyframes jssorl-009-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.column2 img {
+  max-height: 120px;
 }
 
-/*jssor slider bullet skin 052 css*/
-.jssorb052 .i {position:absolute;cursor:pointer;}
-.jssorb052 .i .b {fill:#000;fill-opacity:0.3;}
-.jssorb052 .i:hover .b {fill-opacity:.7;}
-.jssorb052 .iav .b {fill-opacity: 1;}
-.jssorb052 .i.idn {opacity:.3;}
-
-/*jssor slider arrow skin 052 css*/
-.jssora052 {display:block;position:absolute;cursor:pointer;}
-.jssora052 .a {fill:none;stroke:#000;stroke-width:360;stroke-miterlimit:10;}
-.jssora052:hover {opacity:.8;}
-.jssora052.jssora052dn {opacity:.5;}
-.jssora052.jssora052ds {opacity:.3;pointer-events:none;}
 
 
-/* SLIDER BACKLIT */
 
-.backlit {
-  position: relative;
-}
-.backlit:after {
-  position: absolute;
-  content: "";
-  top: -2vw;
-  left: -70px;
-  /* right: -4px; */
-  z-index: -1;
-  height: 115%;
-  width: 124%;
-  margin: 0 auto;
-  transform: scale(0.7);
-  -webkit-filter: blur(5vw);
-  -moz-filter: blur(5vw);
-  -ms-filter: blur(5vw);
-  filter: blur(4vw);
-  background: linear-gradient(270deg, #0fffc1, #7e0fff);
-  background-size: 200% 200%;
-  animation: animateGlow 10s ease infinite;
-}
-}
-@keyframes animateGlow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
- 
 
-/* PROJETOS  */
+/* PROJETOS ________________________________________*/
 figure.snip1206 {
   font-family: 'Montserrat', Arial, sans-serif;
   color: #fff;
@@ -319,7 +410,7 @@ figure.snip1206:after {
   left: 0;
   bottom: 0;
   content: '';
-  opacity: 0.75;
+  opacity: 0.95;
   -webkit-transform: skew(-45deg) scaleX(0);
   transform: skew(-45deg) scaleX(0);
   -webkit-transition: all 0.3s ease-in-out;
@@ -386,7 +477,11 @@ figure.snip1206.hover figcaption p {
 
 
 
-/* CONTACT  */
+
+
+
+
+/* CONTACT  ________________________________________*/
 .center {
   text-align: center;
 }
@@ -424,13 +519,20 @@ figure.snip1206.hover figcaption p {
 .fab {
   font-size: 24px;
   background-color: #efefef;
-  border-radius: 50%;
+  border-radius: 5px;
   color: #000000;
   padding: 5px;
   text-align: center;
   margin: 20px 5px 0 5px;
+  transition: filter 0.3s ease-in-out;
+}
+
+.fab:hover {
+  filter: invert(100%);
 }
 
 input:focus {
   outline:none;
+  border: none;
 }
+

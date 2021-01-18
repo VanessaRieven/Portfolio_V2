@@ -12,7 +12,32 @@ $(document).ready(function() {
         $('.loader').fadeOut(1500);
     }, 2000);
 
+    
+    //COLORBOXES______________________________________________________________________
+    $('.column a').colorbox({
+        overlayClose: true,
+        escKey: true,
+        closeButton: true,
+        fadeOut: true,
+        arrowKey: true,
+        maxHeight: '98%',
+        maxWidth: '98%',
+        rel: 'grupo1' //rel é o que vai buscar todas as imagens da mesma classe e usar as arrows
+    });
 
+        //COLORBOXES______________________________________________________________________
+        $('.column2 a').colorbox({
+            overlayClose: true,
+            escKey: true,
+            closeButton: true,
+            fadeOut: true,
+            arrowKey: true,
+            maxHeight: '98%',
+            maxWidth: '98%',
+            rel: 'grupo2' //rel é o que vai buscar todas as imagens da mesma classe e usar as arrows
+        });
+      
+  
     // 3D Slider
     var jssor_1_options = {
         $AutoPlay: 1,
@@ -63,7 +88,9 @@ $(document).ready(function() {
             $(this).removeClass("hover");
         }
     );
-              
+         
+
+  
 });
 
 

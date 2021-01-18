@@ -1,0 +1,54 @@
+
+@media only screen and (max-width: 1080px) {
+    body, html {
+        position: relative;
+    }
+
+    section {
+        width: 95%;
+    }
+    
+    section span {
+        font-size: 3vw;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav_mobile {
+        position: fixed;
+        background: #111;
+        width: 100%;
+        top: 0;
+        display: flex;
+        z-index: 9999;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .nav_mobile img {
+        filter: invert();
+    }
+    
+    .container_cubes {
+        margin-top: 50%;
+    }
+
+    
+    
+    .links {
+        font-size: 3.2vw;
+    }
+    
+    .description--preview {
+        font-size: 2em;
+        width: 50%;
+        left: 100%;
+        top: 0;
+        height: 100%;
+        padding: 0 0.5em;
+    }
+}
+
