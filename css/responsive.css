@@ -10,6 +10,7 @@
     
     section span {
         font-size: 3vw;
+        line-height: 1;
     }
 
 
@@ -22,7 +23,7 @@
         position: fixed;
         background: #111;
         width: 100%;
-        top: 0;
+        bottom: 0;
         display: flex;
         z-index: 9999;
         display: flex;
@@ -64,9 +65,60 @@
 
     /* WHO AM I  */
 
+    #about {
+        flex-direction: column;
+    }
+
+    .Coluna-1-About {
+        flex-direction: initial;
+        margin-right: 0;
+    }
+
+    .Coluna-1-About img {
+       width: 110px;
+       height: 110px;
+    }
+
+
+    .sobremim {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+
+    .about-me h3 {
+        letter-spacing: 5px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .about-me p {
+        font-size: 11px;
+    }
+
+    .icons {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .icons i {
+        font-size: 30px;
+    }
+
+    hr {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .blocktext {
+        font-size: 10px;
+    }
+
     /* DRAWINGS  */
     #bunga.less {
         margin: 20px 0 0 0;
+        height: 200px;
     }
 
     .row .column {

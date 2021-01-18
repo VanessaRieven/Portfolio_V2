@@ -288,6 +288,11 @@ section span {
   margin-right: 30px;
 }
 
+.Coluna-1-About img {
+  width: 150px;
+  height: 150px;
+}
+
 .fa, .fas {
   font-weight: 900;
   font-size: 40px;
