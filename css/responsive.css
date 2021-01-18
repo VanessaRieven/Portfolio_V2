@@ -12,6 +12,8 @@
         font-size: 3vw;
     }
 
+
+    /* NAV  */
     .nav {
         display: none;
     }
@@ -36,8 +38,6 @@
         margin-top: 50%;
     }
 
-    
-    
     .links {
         font-size: 3.2vw;
     }
@@ -50,5 +50,72 @@
         height: 100%;
         padding: 0 0.5em;
     }
+
+    input[type=radio]#section1:checked ~ nav label[for=section1],
+    input[type=radio]#section2:checked ~ nav label[for=section2],
+    input[type=radio]#section3:checked ~ nav label[for=section3],
+    input[type=radio]#section4:checked ~ nav label[for=section4],
+    input[type=radio]#section5:checked ~ nav label[for=section5],
+    input[type=radio]#section6:checked ~ nav label[for=section6] {
+        background-color: #777;
+        padding: 1px 5px;
+        border-radius: 3px;
+    }
+
+    /* WHO AM I  */
+
+    /* DRAWINGS  */
+    #bunga.less {
+        margin: 20px 0 0 0;
+    }
+
+    .row .column {
+        padding-left: 5px;
+    }
+
+    .row img {
+        margin-top: 5px;
+    }
+
+    /* 3D  */
+
+    .row .column2 {
+        flex: 50%;
+        padding-left: 5px;
+    }
+
+    .row .column2 img {
+        margin-top: 5px;
+    }
+
+    #cboxClose {
+        top: 10px;
+        right: 5px;
+        width: 35px;
+        height: 42px;
+        background-size: 144px 25px;
+    }
+
+    #cboxNext, #cboxPrevious {
+        visibility: hidden;
+    }
+
+    /* WEB DESIGN  */
+
+    .web_section {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    figure.snip1206 {
+        margin: 10px;
+        max-width: 100%;
+        width: 95%;
+    }
+
+    /* PROJECTS  */
+
+    /* Contact  */
 }
 
