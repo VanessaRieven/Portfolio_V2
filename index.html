@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="libraries/colorbox/colorbox.css">
-
     <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/bgeffects.css">
     <link rel="stylesheet" href="css/main.css?v=1">
@@ -30,7 +29,6 @@
                 <div class="wall top"></div>
                 <div class="wall bottom"></div>
               </div>
-            
             </div>
         </div>
         <h1>VANESSA<br>RIEVEN</h1>
@@ -49,21 +47,21 @@
     <input type="radio" name="item" id="section6"/>
     <!-- Navigation-->
     <nav class="nav">
-        <span><label class="nav__item" >Who am I?</label><label for="section1"></label></span>
-        <span><label class="nav__item" >Drawings</label><label for="section2"></label></span>
-        <span><label class="nav__item" >3D</label><label for="section3"></label></span>
-        <span><label class="nav__item" >Web Design</label><label for="section4"></label></span>
-        <span><label class="nav__item" >Projects</label><label for="section5"></label></span>
-        <span><label class="nav__item" >Contact</label><label for="section6"></label></span>
+        <span><label >Who am I?</label><label for="section1" class="nav__item" ></label></span>
+        <span><label>Drawings</label><label for="section2" class="nav__item" ></label></span>
+        <span><label >3D</label><label for="section3" class="nav__item" ></label></span>
+        <span><label>Web Design</label><label for="section4" class="nav__item" ></label></span>
+        <span><label>Projects</label><label for="section5" class="nav__item" ></label></span>
+        <span><label>Contact</label><label for="section6" class="nav__item" ></label></span>
     </nav>
 
     <!-- Mobile Nav-->
     <nav class="nav_mobile">
         <label for="section1"><img src="img/icons/person-circle.svg"></label>
         <label for="section2"><img src="img/icons/brush.svg"></label>
-        <label for="section3"><img src="img/icons/cube.svg"></label>
+        <label for="section3"><i style="font-size: 18px; margin-top: 5px;" class="fas fa-cube"></i></label>
         <label for="section4"><img src="img/icons/code.svg"></label>
-        <label for="section5"><img src="img/icons/project.svg"></label>
+        <label for="section5"><i style="font-size: 18px; margin-top: 5px;" class="fas fa-folder"></i></label>
         <label for="section6"><img src="img/icons/contact.svg"></label>
     </nav>
     <!-- Sections-->
@@ -189,18 +187,20 @@
         <div>
             <h3>WebDesign</h3>
             <div class="web_section">
-                <figure class="snip1206">
+            
+  
+                <figure class="snip1206 hover">
                     <img src="img/1.png"/>
                     <figcaption>
-                        <h2>Personal Portfolio</h2>
+                        <p>Personal Portfolio</p>
                         <p>Version 1 of my online Portfolio</p>
                     </figcaption>
                     <a href="https://www.behance.net/gallery/109584451/Stradivarius-Website-Redesign"></a>
                 </figure>
-                <figure class="snip1206">
+                <figure class="snip1206 hover">
                     <img src="img/3.jpg"/>
                     <figcaption>
-                        <h2>Stradivarius Redesign</h2>
+                        <p>Stradivarius Redesign</p>
                         <p>A small project of a redesigned version of clothing brand Stradivarius website.</p>
                     </figcaption>
                     <a href="https://www.behance.net/gallery/109584451/Stradivarius-Website-Redesign"></a>
@@ -212,10 +212,10 @@
         <div>
             <h3>Projects</h3>
             <div style="display: flex">
-                <figure class="snip1206">
+                <figure class="snip1206 hover">
                     <img src="img/2.jpg" alt="sample74"/>
                     <figcaption>
-                      <h2>Project Alias</h2>
+                      <p>Project Alias</p>
                       <p>A mobile game concept.</p>
                     </figcaption>
                     <a href="https://www.behance.net/gallery/40940593/Project-Alias-Pixel-Art-Game"></a>
@@ -224,7 +224,7 @@
         </div>
     </section>
     <section>
-        <div style="padding:40px; max-width: 400px">
+        <div class="contact-form">
             <h3 class="center">Let's Talk</h3>
             <form id="formulario" action="mailto:vanessa.brioso@my.istec.pt" method="post" enctype="text/plain">
                 <input name=”Name” class="contact" type="text" placeholder="Name" required>

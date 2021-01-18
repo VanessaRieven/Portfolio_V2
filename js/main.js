@@ -8,10 +8,13 @@ $(document).ready(function() {
         $(this).fadeOut(1000);
     })
 
-    setTimeout(function(){ 
-        $('.loader').fadeOut(1500);
-    }, 2000);
-
+  /* Demo purposes only */
+$(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
+  
     
     //COLORBOXES______________________________________________________________________
     $('.column a').colorbox({

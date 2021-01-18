@@ -1,3 +1,4 @@
+
 /* ANIMATIONS  */
 
 @keyframes rotation {
@@ -24,13 +25,14 @@ h1 {
     letter-spacing: 4px;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
-    font-size: 30px;
+    font-size: 39px;
     margin-top: -95px;
     opacity: 0;
-    animation: visibilityAnimation 0.5s 3s forwards;
+    animation: visibilityAnimation 0.5s 4s forwards;
     margin-bottom: 0;
-    color: black;
+    color: #111;
     line-height: 26px;
+    z-index: 99999!important;
 }
 
 h2 {
@@ -52,7 +54,7 @@ h2 {
     left: 0;
     display: block;
     background: #111;
-    z-index:99999;
+    z-index: 9999;
 }
 
 .container_cubes {
@@ -74,7 +76,9 @@ h2 {
     width: 1px;
     height: 1px;
     margin: 0 5px 0 0;
-    transform-style: preserve-3d;
+    /* transform-style: preserve-3d; */
+    z-index: -1!important;
+
   }
   
   .wall {

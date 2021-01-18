@@ -6,6 +6,8 @@
 
     section {
         width: 95%;
+        padding-top: 15px;
+        align-items: initial;
     }
     
     section span {
@@ -13,7 +15,11 @@
         line-height: 1;
     }
 
+    h3 {
+        font-size: 7vw;
+    }
 
+   
     /* NAV  */
     .nav {
         display: none;
@@ -25,7 +31,7 @@
         width: 100%;
         bottom: 0;
         display: flex;
-        z-index: 9999;
+        z-index: 9998;
         display: flex;
         justify-content: space-around;
         padding: 10px 0;
@@ -118,7 +124,7 @@
     /* DRAWINGS  */
     #bunga.less {
         margin: 20px 0 0 0;
-        height: 200px;
+        height: 50%;
     }
 
     .row .column {
@@ -169,5 +175,8 @@
     /* PROJECTS  */
 
     /* Contact  */
+    .contact-form {
+        padding:10px;
+    }
 }
 
