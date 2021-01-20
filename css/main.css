@@ -378,6 +378,7 @@ hr {
 
 .column2 img {
   max-height: 120px;
+  object-fit:cover;
 }
 
 
@@ -501,21 +502,21 @@ figure.snip1206.hover figcaption p:nth-child(2) {
 
 .contact {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 2px;
   padding: 5px 10px;
   font-size: 16px;
   color: black;
   font-family: 'Montserrat';
-  margin: 5px;
+  margin: 5px 0;
   border:none;
 }
 
 .contact-form {
-  padding:40px;
+  padding: 40px;
+  width: 35%;
 }
-
 .message {
-  height: 200px;
+  height: 120px;
 }
 
 .message:focus {
@@ -524,13 +525,14 @@ figure.snip1206.hover figcaption p:nth-child(2) {
 
 #sendmessage {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 2px;
   padding: 5px;
   background: #777;
   color: white;
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 10px;
   outline: none;
+  border: none;
 }
 
 .fab {

@@ -7,7 +7,9 @@
     section {
         width: 95%;
         padding-top: 15px;
-        align-items: initial;
+        /* align-items: initial; */
+        overflow: scroll;
+        height: calc(100% - 40px);
     }
     
     section span {
@@ -125,6 +127,7 @@
     #bunga.less {
         margin: 20px 0 0 0;
         height: 50%;
+        max-height: 200px;
     }
 
     .row .column {
@@ -177,6 +180,7 @@
     /* Contact  */
     .contact-form {
         padding:10px;
+        width: 100%;
     }
 }
 
