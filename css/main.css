@@ -1,24 +1,19 @@
 /* FONTS  ________________________________________*/
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-/* VARIABLES ________________________________________*/
-
 
 
 /* MAIN CSS ________________________________________*/
 
 body, html {
-    font-family: 'Montserrat', sans-serif;
-    background:#111;
-    /* background: radial-gradient(circle at center, #222, #000); */
-    width: 100%;
-    height: 100%;
-    color: #efefef;
-    overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  background:#111;
+  /* background: radial-gradient(circle at center, #222, #000); */
+  width: 100%;
+  height: 100%;
+  color: #efefef;
+  overflow: hidden;
 }
 
 .links {
@@ -45,7 +40,6 @@ h3 {
   display: none;
 }
 
-
 /* SCROLLBAR ________________________________________*/
 
 ::-webkit-scrollbar {
@@ -62,7 +56,7 @@ h3 {
   -webkit-box-shadow: inset 0px 0px #efefef; 
 }
 
-/* MAIN CONTENT  ________________________________________*/
+
 
 /* SECTIONS  ________________________________________*/
 input[type=radio] {
@@ -159,7 +153,6 @@ input[type=radio]#section6:checked ~ .cover {
   background-color: #111;
 }
 
-
 .nav {
   position: fixed;
   z-index: 2;
@@ -171,16 +164,15 @@ input[type=radio]#section6:checked ~ .cover {
 }
 
 .nav span {
-    display: flex;
+  display: flex;
 }
 
 .nav span label {
-    font-size: 10px;
-    margin-top: 12px;
-    margin-right: 10px;
-    color: #777;
+  font-size: 10px;
+  margin-top: 12px;
+  margin-right: 10px;
+  color: #777;
 }
-
 
 .nav__item {
   width: 12px;
@@ -191,6 +183,7 @@ input[type=radio]#section6:checked ~ .cover {
   border-radius: 50%;
   cursor: pointer;
 }
+
 .nav__item:hover {
   background-color: white;
 }
@@ -216,8 +209,8 @@ section div {
 }
 
 section span {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.8vw;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8vw;
 }
 
 .cover {
@@ -316,13 +309,6 @@ hr {
 
 
 
-
-
-
-
-
-
-
 /* Drawings ________________________________________*/
 
 #bunga.less {
@@ -360,12 +346,6 @@ hr {
 }
 
 
-
-
-
-
-
-
 /* 3D ________________________________________*/
 .side_divs {
   display: flex;
@@ -377,7 +357,7 @@ hr {
 }
 
 .column2 img {
-  max-height: 120px;
+  max-height: 150px;
   object-fit:cover;
 }
 
@@ -403,6 +383,7 @@ figure.snip1206 {
   color: #000000;
   text-align: center;
 }
+
 figure.snip1206 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -410,12 +391,14 @@ figure.snip1206 * {
   transition: all 0.6s ease;
   
 }
+
 figure.snip1206 img {
   opacity: 1;
   width: 100%;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
+
 figure.snip1206:after {
   background: #ffffff;
   width: 100%;
@@ -430,6 +413,7 @@ figure.snip1206:after {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 figure.snip1206 figcaption {
   position: absolute;
   top: 50%;
@@ -439,23 +423,27 @@ figure.snip1206 figcaption {
   transform: translateY(-50%);
   z-index: 1;
 }
+
 figure.snip1206 p:nth-child(1), 
 figure.snip1206 p:nth-child(2) {
   margin: 0;
   width: 100%;
   opacity: 0;
 }
+
 figure.snip1206 p:nth-child(1) {
   padding: 0 30px;
   display: inline-block;
   font-weight: 400;
   text-transform: uppercase;
 }
+
 figure.snip1206 p:nth-child(2) {
   padding: 0 50px;
   font-size: 0.8em;
   font-weight: 500;
 }
+
 figure.snip1206 a {
   left: 0;
   right: 0;
@@ -464,12 +452,14 @@ figure.snip1206 a {
   position: absolute;
   z-index: 1;
 }
+
 figure.snip1206:hover:after,
 figure.snip1206.hover:after {
   -webkit-transform: skew(-45deg) scaleX(1);
   transform: skew(-45deg) scaleX(1);
   transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
 figure.snip1206:hover figcaption p:nth-child(1),
 figure.snip1206.hover figcaption p:nth-child(1),
 figure.snip1206:hover figcaption p:nth-child(2),
@@ -479,19 +469,16 @@ figure.snip1206.hover figcaption p:nth-child(2) {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
+
 figure.snip1206:hover figcaption p:nth-child(1),
 figure.snip1206.hover p:nth-child(1) {
   opacity: 1;
 }
+
 figure.snip1206:hover figcaption p:nth-child(2),
 figure.snip1206.hover figcaption p:nth-child(2) {
   opacity: 0.7;
 }
-
-
-
-
-
 
 
 
@@ -525,20 +512,25 @@ figure.snip1206.hover figcaption p:nth-child(2) {
 
 #sendmessage {
   width: 100%;
-  border-radius: 2px;
+  border-radius: 3px;
   padding: 5px;
-  background: #777;
-  color: white;
+  background: white;
+  border: 2px solid white;
+  color: black;
   font-weight: 600;
   margin-top: 10px;
   outline: none;
-  border: none;
+}
+
+#sendmessage:hover {
+  background: black;
+  color: white;
 }
 
 .fab {
   font-size: 24px;
   background-color: #efefef;
-  border-radius: 5px;
+  border-radius: 3px;
   color: #000000;
   padding: 5px;
   text-align: center;
@@ -557,7 +549,6 @@ input:focus {
 
 
 
-
 /* MODALS  */
 #modal {
   top:0;
@@ -566,13 +557,15 @@ input:focus {
   height: 100%;
   width: 100%;
   z-index:9999;
-  padding: 50px;
+  padding-top: 50px;
   background-color: #efefef;
   overflow: scroll;
   transform:scale(0);
 }
 
 .modal-bg {
+  width: 60%;
+  margin: 0 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -584,11 +577,12 @@ input:focus {
   color: #111;
   font-family: 'Montserrat';
   font-weight: 600;
-  max-width: 60%;
+  max-width: 95%;
+  margin-top: 20px;
 }
 
 .modal-bg img {
-  max-width: 60%;
+  width: 95%;
   margin: 10px 0;
 }
 
@@ -606,6 +600,13 @@ input:focus {
 }
 .one.out .modal-bg {
   animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.video {
+  width: 95%;
+  height: 615px;
+  border: none;
+  outline: none;
 }
 
 @keyframes unfoldIn {
@@ -646,3 +647,5 @@ input:focus {
     transform: scale(0);
   }
 }
+
+

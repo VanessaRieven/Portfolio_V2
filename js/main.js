@@ -97,11 +97,10 @@ $(document).ready(function() {
         $('#modal').removeAttr('class').addClass('one');
         var data = $(this).attr('data-id')
         if (data == 1) {
-            $('#modal').css('background-color', '#efefef');
+            $('.modal-bg').css('background-color', '#efefef');
             $('.modal-bg').html(`
                 <img src="img/projeto1/01-min.jpg">
                 <img src="img/projeto1/02-min.png">
-                <img src="img/projeto1/03.gif">
                 <img src="img/projeto1/04-min.png">
                 <img src="img/projeto1/05-min.png">
                 <img src="img/projeto1/06-min.png">
@@ -116,7 +115,7 @@ $(document).ready(function() {
         }
 
         if (data == 2) {
-            $('#modal').css('background-color', '#606060');
+            $('.modal-bg').css('background-color', '#606060');
             $('.modal-bg').html(`
               
                 <img src="img/projeto2/001-min.jpg">
@@ -134,28 +133,21 @@ $(document).ready(function() {
         }
 
         if (data == 3) {
-            $('#modal').css('background-color', '#ccc');
+            $('.modal-bg').css('background-color', '#ccc');
             $('.modal-bg').html(`
                 <p>
-                    This was a project for our one year course in Game Design at Restart. Our group of four had to do a small demonstration in the end of the year of a game we created during our course. In 6 months this is the compilation of all we could do in terms of art and animation. 
+                    Project Alias, was a project for our one year course in Game Design at Restart. Our group of four had to do a small demonstration in the end of the year of a game we created during our course. In 6 months this is the compilation of all we could do in terms of art and animation. 
                     We decided after a lot of changes and experiments in other styles, 2D and 3D, to do a game in Pixel Art. 
                     The trailer was made by Vanessa Rieven in her first year in the Animation and Games Art course at University of Sunderland. It shows more or less how the game was planned to be.
                     (credits of the song belongs to Position Music - Shadow Dance)
                 </p>
-                <img src="img/projeto3/01-min.jpg">
-                <img src="img/projeto3/02-min.jpg">
-                <img src="img/projeto3/03-min.jpg">
-                <img src="img/projeto3/04-min.jpg">
-                <img src="img/projeto3/05-min.jpg">
-                <img src="img/projeto3/06-min.jpg">
-                <img src="img/projeto3/07-min.jpg">
-                <img src="img/projeto3/08-min.jpg">
-                <img src="img/projeto3/09-min.jpg">
-                <img src="img/projeto3/10-min.jpg">
-                <img src="img/projeto3/11-min.jpg">
-                <img src="img/projeto3/12-min.jpg">
-                <img src="img/projeto3/13-min.jpg">
-                <img src="img/projeto3/14-min.jpg">
+                <img src="img/projeto3/02-min.png">
+                <img src="img/projeto3/03-min.png">
+                <img src="img/projeto3/04-min.png">
+                <img src="img/projeto3/05-min.png">
+                <video class="video" controls>
+                    <source src="videos/alias.mp4" type="video/mp4">
+                </video>
             `)
         }
       
@@ -194,4 +186,6 @@ $(document).ready(function() {
         rel: 'grupo2' //rel é o que vai buscar todas as imagens da mesma classe e usar as arrows
     });
 });
+
+
 
