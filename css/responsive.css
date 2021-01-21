@@ -174,7 +174,20 @@
         max-width: 100%;
         width: 95%;
     }
+    
+    #modal {
+        padding: 10px;
+    }
 
+    .modal-bg img {
+        max-width: 100%;
+    }
+
+    .modal-bg p {
+        max-width: 100%;
+      }
+
+      
     /* PROJECTS  */
 
     /* Contact  */

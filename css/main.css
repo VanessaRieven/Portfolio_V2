@@ -555,3 +555,94 @@ input:focus {
   border: none;
 }
 
+
+
+
+/* MODALS  */
+#modal {
+  top:0;
+  left:0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index:9999;
+  padding: 50px;
+  background-color: #efefef;
+  overflow: scroll;
+  transform:scale(0);
+}
+
+.modal-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-bg p {
+  font-size: 11px;
+  color: #111;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  max-width: 60%;
+}
+
+.modal-bg img {
+  max-width: 60%;
+  margin: 10px 0;
+}
+
+.one {
+  transform: scaleY(0.01) scaleX(0);
+  animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+.one .modal-bg {
+  transform: scale(0);
+  animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+.one.out {
+  transform: scale(1);
+  animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+.one.out .modal-bg {
+  animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes unfoldIn {
+  0% {
+    transform: scaleY(0.005) scaleX(0);
+  }
+  50% {
+    transform: scaleY(0.005) scaleX(1);
+  }
+  100% {
+    transform: scaleY(1) scaleX(1);
+  }
+}
+@keyframes unfoldOut {
+  0% {
+    transform: scaleY(1) scaleX(1);
+  }
+  50% {
+    transform: scaleY(0.005) scaleX(1);
+  }
+  100% {
+    transform: scaleY(0.005) scaleX(0);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
