@@ -1,4 +1,13 @@
+var isMobile = false; //initiate as false
+// device detection
+if (window.matchMedia("(max-width: 1080px)").matches) {
+   isMobile = true;
+}
+
+
+
 $(document).ready(function() {
+
 
     //LOADERS______________________________________________________________________
     setTimeout(function(){ 
@@ -9,8 +18,18 @@ $(document).ready(function() {
         $(this).fadeOut(1000);
     })
     
+    //INPUT MOBILE______________________________________________________________________
+
+    $('body').on('click touchstart', 'input, textarea', function() {
+        $(this).select();
+        $(this).setSelectionRange(0, this.value.length);
+        $(this).focus();
+    })
+    
 
     //SWIPE MOBILE______________________________________________________________________
+ 
+
     jquerySwipeHandler.handleSwipe("section", [
         jquerySwipeHandler.SWIPE_LEFT, 
         jquerySwipeHandler.SWIPE_RIGHT 
@@ -19,7 +38,7 @@ $(document).ready(function() {
 
         var checked = $('.page_inp:checked').val();
     
-        if (direction == "SWIPE_RIGHT" ) {
+        if (isMobile == true && direction == "SWIPE_RIGHT" ) {
 
             console.log('direita')
             if(checked == 1) {
@@ -45,7 +64,7 @@ $(document).ready(function() {
             if(checked == 6) {
                 $('#section5').trigger('click');
             }
-        } else if (direction == "SWIPE_LEFT" ) {
+        } else if (isMobile == true &&  direction == "SWIPE_LEFT" ) {
             console.log('esq')
 
             if(checked == 1) {

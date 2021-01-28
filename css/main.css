@@ -295,7 +295,7 @@ section span {
   transition:         transform .8s ease-in-out;
 }
 
-.fa:hover, .fas:hover {
+.icons .fa:hover, .fas:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }

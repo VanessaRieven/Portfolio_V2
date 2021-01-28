@@ -1,6 +1,7 @@
 .geo-arrow {
     fill: none;
-    stroke: #343434;
+    stroke: white;
+    opacity: 0.2;
     stroke-width: 2;
     stroke-miterlimit: 10
   }
